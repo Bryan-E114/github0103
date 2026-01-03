@@ -8,5 +8,30 @@
         <h1>開南大學資訊應用碩士專班</h1>
         <p>前端網頁開發=HTML+CSS+Javascript</p>
         <p><a href="https://ims.knu.edu.tw/p/405-1035-31988,c186.php?Lang=zh-tw">瀏覽師資陣容</a></p>
+        
+        <table border=""1px" id="myTable">
+            <tr>
+                <td>姓名</td>
+                <td>電話</td>
+                <td>年齡</td>
+            </tr>
+            <tr>
+                <td>小明</td>
+                <td>09123456789</td>
+                <td>33</td>
+            </tr>
+        </table>
+        <button onclick="insRow()">新增一列</button>
+        <script>
+            function insRow(){
+                var x =document.getElementById('myTable').insertRow(1);
+                var col1 = x.insertCell(0);
+                var col2 = x.insertCell(1);
+                var col3 = x.insertCell(2);
+                col1.innerHTML = "訪客";
+                col2.innerHTML = "987654321";
+                col3.innerHTML = "18";
+            }
+        </script>
     </body> 
 </html>
